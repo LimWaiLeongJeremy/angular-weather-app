@@ -1,0 +1,10 @@
+<form [formGroup]="form" (ngSubmit)="processForm()">
+
+    <mat-form-field appearance="fill">
+        <mat-label>City Name</mat-label>
+        <input matInput formControlName="cityName">
+    </mat-form-field>
+
+    <ng-content></ng-content>
+
+</form>
